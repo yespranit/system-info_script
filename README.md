@@ -1,6 +1,6 @@
 # system-info_script
 this is a simple linux bash script that displys basic system information in one click.
-It is useful for system infirnation
+It is useful for system information 
 
 # Features
 - current logged-in user
