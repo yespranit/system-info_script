@@ -1,0 +1,30 @@
+#!/bin/bash
+
+echo "------------------------------------------------------------------------"
+echo "          SYSTEM INFORMATION                                            "
+echo "------------------------------------------------------------------------"
+sleep 2
+# current user
+echo "Current User: $(whoami)"
+
+# Hostname
+echo "Hostname: $(hostname)"
+sleep 2
+
+# OS version
+echo "OS Version: $(awk '{print $3}' /proc/version)"
+sleep 2
+
+# CPU info
+echo "CPU: $(lscpu | grep 'Model name')"
+sleep 2
+
+# Memory usage
+echo "memory usage:"
+free -h
+
+#Disk usage
+echo " system Uptime: $(uptime -p)"
+
+echo "---------------THANK YOU-----------------------------------------------"
+
